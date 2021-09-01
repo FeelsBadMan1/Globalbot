@@ -54,7 +54,7 @@ def get_globalchat_id(guildid):
 async def announce(ctx, *, text):
     if str(ctx.author.id) not in ranks:
         embed = discord.Embed(
-            title=f"Globalbot Errormessage: \n",
+            title="Globalbot Errormessage: \n",
             description="You are missing Botowner permission(s) to run this command.\n"
                         f"\n\n[Support-Server]({supportinvite}) | [Bot-Invite]({botinvite}) | [GitHub]({githuburl})",
             color=commandcolor)
@@ -197,7 +197,7 @@ async def sendAll(message, member):
 
     if True in bad_word_detection:
         embed = discord.Embed(
-            title=f"Blacklisted Word Detected! \n",
+            title="Blacklisted Word Detected! \n",
             description=f"I have detected that you used {word} what is blacklisted. Please stop doing that!\n"
                         f"Words on Blacklist:\n {bad_words}"
                         f"\n\n[Support-Server]({supportinvite}) | [Bot-Invite]({botinvite}) | [GitHub]({githuburl})",
