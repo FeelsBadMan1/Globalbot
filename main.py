@@ -178,9 +178,11 @@ async def on_message(message):
     if not message.guild or message.author.bot:
         return
 
-    if not message.content.startswith(prefix):
-        if get_globalchat(message.guild.id, message.channel.id):
-            await sendAll(message, message.author)
+    if (
+        not message.content.startswith(prefix)
+        and get_globalchat(message.guild.id, message.channel.id)
+    ):
+        await sendAll(message, message.author)
     await bot.process_commands(message)
 
 
