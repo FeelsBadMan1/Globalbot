@@ -11,7 +11,7 @@ class ServerlistCog(commands.Cog, name="ServerlistCog"):
 
 		embed = discord.Embed(
 			title=f"All Servers im curretly in: ({len(serverlist)})",
-			description=f" \n".join(serverlist),
+			description=" \n".join(serverlist),
 			color=commandcolor
 		)
 		embed.set_thumbnail(url=f"{ctx.guild.icon_url}")

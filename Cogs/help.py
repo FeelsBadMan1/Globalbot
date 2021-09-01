@@ -11,7 +11,7 @@ class HelpCog(commands.Cog, name="HelpCog"):
 	async def commands(self, ctx):
 		if str(ctx.author.id) in ranks:
 			embed = discord.Embed(
-				title=f"Command List: \n",
+				title="Command List: \n",
 				description=f"{prefix}cmds => Shows this Message\n"
 							f"{prefix}announce => Sending a Announcement though all Servers (Botowner only)\n"
 							f"{prefix}addglobal => Setup Globalchat in a Channel\n"
@@ -30,7 +30,7 @@ class HelpCog(commands.Cog, name="HelpCog"):
 		else:
 			if not str(ctx.author.id) in ranks:
 				embed = discord.Embed(
-					title=f"Command List: \n",
+					title="Command List: \n",
 					description=f"{prefix}cmds => Shows this Message\n"
 								f"{prefix}announce => Sending a Announcement though all Servers (Botowner only)\n"
 								f"{prefix}addglobal => Setup Globalchat in a Channel\n"
