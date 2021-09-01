@@ -12,7 +12,6 @@ import string
 import Augmentor
 import os
 import shutil
-import asyncio
 
 
 from discord.ext import commands
