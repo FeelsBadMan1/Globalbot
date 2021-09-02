@@ -187,7 +187,6 @@ async def on_message(message):
 
 
 async def sendAll(message, member):
-    global word
     bad_words = ["Hurensohn", "ficke", "Ficker", "Wichser", "bitch"]
     bad_word_detection = []
 
